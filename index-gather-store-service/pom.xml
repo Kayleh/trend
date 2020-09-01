@@ -12,6 +12,12 @@
     <artifactId>index-gather-store-service</artifactId>
 
     <dependencies>
+
+        <!-- 定时器 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-quartz</artifactId>
+        </dependency>
         <!-- redis -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -51,7 +51,7 @@ public class IndexDataService {
     }
 
     @Cacheable(key = "'indexData-code-'+ #p0")
-    public List<IndexData> get() {
+    public List<IndexData> get(String code) {
         return CollUtil.toList();
     }
 
