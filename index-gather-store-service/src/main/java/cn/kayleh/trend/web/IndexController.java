@@ -34,6 +34,8 @@ public class IndexController {
     @GetMapping("/getCodes")
     public List<Index> get() throws Exception {
         return indexService.get();
+//        return indexService.fetch_indexes_from_third_part();
+
     }
 
     @GetMapping("/removeCodes")

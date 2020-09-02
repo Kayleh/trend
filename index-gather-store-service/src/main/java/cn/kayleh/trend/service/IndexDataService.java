@@ -14,7 +14,10 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @Author: Kayleh
@@ -31,10 +34,11 @@ public class IndexDataService {
     @HystrixCommand(fallbackMethod = "third_part_not_connected")
     public List<IndexData> fresh(String code) {
         List<IndexData> indexeDatas = fetch_indexes_from_third_part(code);
+
         indexDatas.put(code, indexeDatas);
 
         System.out.println("code:" + code);
-        System.out.println("indexDatas:" + indexDatas.get(code).size());
+        System.out.println("indexeDatas:" + indexDatas.get(code).size());
 
         IndexDataService indexDataService = SpringContextUtil.getBean(IndexDataService.class);
         indexDataService.remove(code);

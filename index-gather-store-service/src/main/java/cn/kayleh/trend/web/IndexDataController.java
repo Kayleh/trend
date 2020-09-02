@@ -1,9 +1,7 @@
 package cn.kayleh.trend.web;
 
-import cn.kayleh.trend.pojo.Index;
 import cn.kayleh.trend.pojo.IndexData;
 import cn.kayleh.trend.service.IndexDataService;
-import cn.kayleh.trend.service.IndexService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,7 +1,6 @@
 package cn.kayleh.trend.config;
 
 import cn.kayleh.trend.job.IndexDataSyncJob;
-import cn.kayleh.trend.pojo.IndexData;
 import org.quartz.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,15 +17,16 @@ public class QuartzConfiguration {
 
     @Bean
     public JobDetail weatherDataSyncJobDetail() {
-        return JobBuilder.newJob(IndexDataSyncJob.class).withIdentity("indexDataSyncJob").storeDurably().build();
+        return JobBuilder.newJob(IndexDataSyncJob.class).withIdentity("indexDataSyncJob")
+                .storeDurably().build();
     }
 
     @Bean
     public Trigger weatherDataSyncTrigger() {
-        SimpleScheduleBuilder scheduleBuilder = SimpleScheduleBuilder.simpleSchedule().withIntervalInMinutes(interval).repeatForever();
+        SimpleScheduleBuilder schedBuilder = SimpleScheduleBuilder.simpleSchedule()
+                .withIntervalInMinutes(interval).repeatForever();
 
         return TriggerBuilder.newTrigger().forJob(weatherDataSyncJobDetail())
-                .withIdentity("indexDataSyncTrigger").withSchedule(scheduleBuilder).build();
+                .withIdentity("indexDataSyncTrigger").withSchedule(schedBuilder).build();
     }
-
 }
