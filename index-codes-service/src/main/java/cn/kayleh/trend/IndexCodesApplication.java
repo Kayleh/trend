@@ -21,7 +21,7 @@ import java.util.concurrent.TimeoutException;
 @EnableCaching
 public class IndexCodesApplication {
     public static void main(String[] args) {
-        int port = 0;
+        int port = 8011;//0
         int defaultPort = 8011;
         int redisPort = 6379;
         int eurekaServerPort = 8761;

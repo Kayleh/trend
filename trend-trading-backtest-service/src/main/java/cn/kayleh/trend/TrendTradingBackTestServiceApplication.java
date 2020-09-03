@@ -28,7 +28,7 @@ import java.util.concurrent.TimeoutException;
 public class TrendTradingBackTestServiceApplication {
 
     public static void main(String[] args) {
-        int port = 0;
+        int port = 8051;//0
         int defaultPort = 8051;
         int eurekaServerPort = 8761;
 
