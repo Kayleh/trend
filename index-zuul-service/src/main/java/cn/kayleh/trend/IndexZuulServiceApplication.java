@@ -1,11 +1,13 @@
 package cn.kayleh.trend;
 
+import brave.sampler.Sampler;
 import cn.hutool.core.util.NetUtil;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+import org.springframework.context.annotation.Bean;
 
 /**
  * @Author: Kayleh
@@ -24,5 +26,10 @@ public class IndexZuulServiceApplication {
             System.exit(1);
         }
         new SpringApplicationBuilder(IndexZuulServiceApplication.class).properties("server.port=" + port).run(args);
+    }
+
+    @Bean
+    public Sampler defaultSampler() {
+        return Sampler.ALWAYS_SAMPLE;
     }
 }

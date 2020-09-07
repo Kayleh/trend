@@ -12,6 +12,12 @@
     <artifactId>trend-trading-backtest-view</artifactId>
 
     <dependencies>
+        <!--zipkin-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
+
         <!-- springboot web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
