@@ -2,24 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a976130-c1e8-4914-9384-679eedfe54db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index-codes-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/index-codes-service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-codes-service/target/classes/cn/kayleh/trend/IndexCodesApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/index-codes-service/target/classes/cn/kayleh/trend/IndexCodesApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-data-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/index-data-service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-data-service/target/classes/cn/kayleh/trend/IndexDataApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/index-data-service/target/classes/cn/kayleh/trend/IndexDataApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-zuul-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/index-zuul-service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-zuul-service/target/classes/cn/kayleh/trend/IndexZuulServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/index-zuul-service/target/classes/cn/kayleh/trend/IndexZuulServiceApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-hystrix-dashboard/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-hystrix-dashboard/src/main/java/cn/kayleh/trend/IndexHystrixDashboardApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-hystrix-dashboard/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-hystrix-dashboard/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-hystrix-dashboard/target/classes/cn/kayleh/trend/IndexHystrixDashboardApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-turbine/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-turbine/src/main/java/cn/kayleh/trend/IndexTurbineApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-turbine/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-turbine/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-turbine/target/classes/cn/kayleh/trend/IndexTurbineApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java/cn/kayleh/trend/util/AccessService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-service/target/classes/cn/kayleh/trend/util/AccessService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trend-trading-backtest-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java/cn/kayleh/trend/TrendTradingBackTestServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java/cn/kayleh/trend/TrendTradingBackTestServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trend-trading-backtest-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-service/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trend-trading-backtest-service/target/classes/cn/kayleh/trend/TrendTradingBackTestServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-service/target/classes/cn/kayleh/trend/TrendTradingBackTestServiceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trend-trading-backtest-view/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-view/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/java/cn/kayleh/trend/TrendTradingBackTestViewApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/java/cn/kayleh/trend/TrendTradingBackTestViewApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/java/cn/kayleh/trend/web/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/java/cn/kayleh/trend/web/ViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/templates/include/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/templates/include/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trend-trading-backtest-view/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-view/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trend-trading-backtest-view/target/classes/cn/kayleh/trend/TrendTradingBackTestViewApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-view/target/classes/cn/kayleh/trend/TrendTradingBackTestViewApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trend-trading-backtest-view/target/classes/cn/kayleh/trend/web/ViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-view/target/classes/cn/kayleh/trend/web/ViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trend-trading-backtest-view/target/classes/templates/include/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-view/target/classes/templates/include/footer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,23 +69,25 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/index-turbine/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.37442502" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\project\trendParentProject\index-config-server\src\main\java" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\trendParentProject\trend-trading-backtest-view\src\main\resources" />
       <recent name="D:\project\trendParentProject\third-part-index-data-project\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\trendParentProject" />
+      <recent name="D:\project\trendParentProject\src\main" />
+      <recent name="D:\project\trendParentProject\index-config-server\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -92,7 +97,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FreshConfigUtil">
+  <component name="RunManager" selected="Spring Boot.TrendTradingBackTestServiceApplication">
+    <configuration name="AccessService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.kayleh.trend.util.AccessService" />
+      <module name="trend-trading-backtest-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.kayleh.trend.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FreshConfigUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.kayleh.trend.util.FreshConfigUtil" />
       <module name="trend-trading-backtest-view" />
@@ -106,32 +124,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IndexConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="index-config-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.kayleh.trend.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.kayleh.trend.IndexConfigServerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IndexDataApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="index-data-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.kayleh.trend.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.kayleh.trend.IndexDataApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="IndexGatherStoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="index-gather-store-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.kayleh.trend.IndexGatherStoreApplication" />
@@ -139,47 +131,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IndexZuulServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="index-zuul-service" />
+    <configuration name="IndexHystrixDashboardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="index-hystrix-dashboard" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.kayleh.trend.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.kayleh.trend.IndexZuulServiceApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.kayleh.trend.IndexHystrixDashboardApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrendTradingBackTestViewApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="trend-trading-backtest-view" />
+    <configuration name="IndexTurbineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="index-turbine" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.kayleh.trend.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.kayleh.trend.TrendTradingBackTestViewApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.kayleh.trend.IndexTurbineApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrendTradingBackTestServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="trend-trading-backtest-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.kayleh.trend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.kayleh.trend.TrendTradingBackTestServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.TrendTradingBackTestViewApplication" />
-      <item itemvalue="Spring Boot.IndexDataApplication" />
-      <item itemvalue="Spring Boot.IndexZuulServiceApplication" />
       <item itemvalue="Spring Boot.IndexGatherStoreApplication" />
-      <item itemvalue="Spring Boot.IndexConfigServerApplication" />
       <item itemvalue="Application.FreshConfigUtil" />
+      <item itemvalue="Spring Boot.TrendTradingBackTestServiceApplication" />
+      <item itemvalue="Spring Boot.IndexHystrixDashboardApplication" />
+      <item itemvalue="Application.AccessService" />
+      <item itemvalue="Spring Boot.IndexTurbineApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.TrendTradingBackTestServiceApplication" />
+        <item itemvalue="Spring Boot.IndexTurbineApplication" />
+        <item itemvalue="Application.AccessService" />
+        <item itemvalue="Spring Boot.IndexHystrixDashboardApplication" />
         <item itemvalue="Application.FreshConfigUtil" />
-        <item itemvalue="Spring Boot.IndexZuulServiceApplication" />
-        <item itemvalue="Spring Boot.TrendTradingBackTestViewApplication" />
-        <item itemvalue="Spring Boot.IndexConfigServerApplication" />
-        <item itemvalue="Spring Boot.IndexDataApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +215,7 @@
       <workItem from="1599396578634" duration="7324000" />
       <workItem from="1599411399946" duration="387000" />
       <workItem from="1599447474510" duration="5375000" />
-      <workItem from="1599482487021" duration="6594000" />
+      <workItem from="1599482487021" duration="11107000" />
     </task>
     <servers />
   </component>
@@ -222,14 +227,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="699" y="217" key="#New_Docker_Connection/0.0.1920.1080@0.0.1920.1080" timestamp="1599482535591" />
-    <state x="312" y="8" key="#Project_Structure" timestamp="1598848403660">
+    <state x="312" y="8" key="#Project_Structure" timestamp="1599494171345">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="312" y="8" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1598848403660" />
+    <state x="312" y="8" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1599494171345" />
     <state x="409" y="183" width="1445" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598971784783">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="409" y="183" width="1445" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1598971784783" />
+    <state x="635" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599494270020">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="635" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1599494270020" />
     <state x="718" y="165" key="#com.intellij.ide.util.MemberChooser" timestamp="1599048778322">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -242,38 +251,38 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="718" y="414" key="Github.CreateGistDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1599142893563" />
-    <state width="1301" height="409" key="GridCell.Tab.0.bottom" timestamp="1599490227740">
+    <state width="1289" height="510" key="GridCell.Tab.0.bottom" timestamp="1599495493919">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1301" height="409" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1599490227740" />
-    <state width="1301" height="409" key="GridCell.Tab.0.center" timestamp="1599490227740">
+    <state width="1289" height="510" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1599495493919" />
+    <state width="1289" height="510" key="GridCell.Tab.0.center" timestamp="1599495493919">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1301" height="409" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1599490227740" />
-    <state width="1301" height="409" key="GridCell.Tab.0.left" timestamp="1599490227740">
+    <state width="1289" height="510" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1599495493919" />
+    <state width="1289" height="510" key="GridCell.Tab.0.left" timestamp="1599495493919">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1301" height="409" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1599490227740" />
-    <state width="1301" height="409" key="GridCell.Tab.0.right" timestamp="1599490227740">
+    <state width="1289" height="510" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1599495493919" />
+    <state width="1289" height="510" key="GridCell.Tab.0.right" timestamp="1599495493919">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1301" height="409" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599490227740" />
-    <state width="1301" height="409" key="GridCell.Tab.1.bottom" timestamp="1599490227741">
+    <state width="1289" height="510" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599495493919" />
+    <state width="1289" height="510" key="GridCell.Tab.1.bottom" timestamp="1599495493920">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1301" height="409" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1599490227741" />
-    <state width="1301" height="409" key="GridCell.Tab.1.center" timestamp="1599490227740">
+    <state width="1289" height="510" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1599495493920" />
+    <state width="1289" height="510" key="GridCell.Tab.1.center" timestamp="1599495493920">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1301" height="409" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1599490227740" />
-    <state width="1301" height="409" key="GridCell.Tab.1.left" timestamp="1599490227740">
+    <state width="1289" height="510" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1599495493920" />
+    <state width="1289" height="510" key="GridCell.Tab.1.left" timestamp="1599495493919">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1301" height="409" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1599490227740" />
-    <state width="1301" height="409" key="GridCell.Tab.1.right" timestamp="1599490227741">
+    <state width="1289" height="510" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1599495493919" />
+    <state width="1289" height="510" key="GridCell.Tab.1.right" timestamp="1599495493920">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1301" height="409" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599490227741" />
+    <state width="1289" height="510" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599495493920" />
     <state width="1301" height="409" key="GridCell.Tab.2.bottom" timestamp="1599490167198">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -290,25 +299,33 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1301" height="409" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599490167198" />
-    <state x="359" y="96" key="SettingsEditor" timestamp="1599487241875">
+    <state x="359" y="15" key="SettingsEditor" timestamp="1599494867987">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="359" y="96" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1599487241875" />
+    <state x="359" y="15" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1599494867987" />
+    <state x="781" y="166" key="SpringBootCustomization" timestamp="1599494350884">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="781" y="166" key="SpringBootCustomization/0.0.1920.1080@0.0.1920.1080" timestamp="1599494350884" />
     <state width="770" height="515" key="SwitcherDM" timestamp="1599230286817">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="770" height="515" key="SwitcherDM/0.0.1920.1080@0.0.1920.1080" timestamp="1599230286817" />
-    <state x="701" y="299" key="chooseDestDirectoryDialog" timestamp="1599047012360">
+    <state x="701" y="299" key="chooseDestDirectoryDialog" timestamp="1599494179105">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="701" y="299" key="chooseDestDirectoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1599047012360" />
+    <state x="701" y="299" key="chooseDestDirectoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1599494179105" />
     <state x="675" y="310" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1598937621444">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="675" y="310" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1598937621444" />
-    <state x="180" y="118" key="new project wizard" timestamp="1599452581346">
+    <state x="180" y="118" key="new project wizard" timestamp="1599494037502">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="180" y="118" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1599452581346" />
+    <state x="180" y="118" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1599494037502" />
+    <state x="525" y="150" key="spring file set editor" timestamp="1599494353360">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="525" y="150" key="spring file set editor/0.0.1920.1080@0.0.1920.1080" timestamp="1599494353360" />
   </component>
 </project>
