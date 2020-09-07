@@ -1,8 +1,8 @@
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#   移动到bootstrap.yml里面
 spring:
   application:
     name: trend-trading-backtest-view
@@ -14,3 +14,13 @@ spring:
       content-type: text/html
   zipkin:
     base-url: http://localhost:9411
+
+#  其作用是允许访问：/actuator/bus-refresh
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-methods: "*"
+        allowed-origins: "*"
