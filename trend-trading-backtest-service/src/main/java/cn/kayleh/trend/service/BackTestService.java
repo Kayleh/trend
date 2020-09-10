@@ -20,11 +20,13 @@ import java.util.*;
  */
 //提供所有模拟回测数据的微服务
 @Service
-public class BackTestService {
+public class BackTestService
+{
     @Autowired
     IndexDataClient indexDataClient;
 
-    public List<IndexData> listIndexData(String code) {
+    public List<IndexData> listIndexData(String code)
+    {
         List<IndexData> result = indexDataClient.getIndexData(code);
         Collections.reverse(result);
 
@@ -34,7 +36,8 @@ public class BackTestService {
         return result;
     }
 
-    public Map<String, Object> simulate(int ma, float sellRate, float buyRate, float serviceCharge, List<IndexData> indexDatas) {
+    public Map<String, Object> simulate(int ma, float sellRate, float buyRate, float serviceCharge, List<IndexData> indexDatas)
+    {
 
         List<Profit> profits = new ArrayList<>();
         List<Trade> trades = new ArrayList<>();
@@ -56,7 +59,8 @@ public class BackTestService {
         if (!indexDatas.isEmpty())
             init = indexDatas.get(0).getClosePoint();
 
-        for (int i = 0; i < indexDatas.size(); i++) {
+        for (int i = 0; i < indexDatas.size(); i++)
+        {
             IndexData indexData = indexDatas.get(i);
             float closePoint = indexData.getClosePoint();
             float avg = getMA(i, ma, indexDatas);
@@ -65,11 +69,14 @@ public class BackTestService {
             float increase_rate = closePoint / avg;
             float decrease_rate = closePoint / max;
 
-            if (avg != 0) {
+            if (avg != 0)
+            {
                 //buy 超过了均线
-                if (increase_rate > buyRate) {
+                if (increase_rate > buyRate)
+                {
                     //如果没买
-                    if (0 == share) {
+                    if (0 == share)
+                    {
                         share = cash / closePoint;
                         cash = 0;
 
@@ -83,9 +90,11 @@ public class BackTestService {
                     }
                 }
                 //sell 低于了卖点
-                else if (decrease_rate < sellRate) {
+                else if (decrease_rate < sellRate)
+                {
                     //如果没卖
-                    if (0 != share) {
+                    if (0 != share)
+                    {
                         cash = closePoint * share * (1 - serviceCharge);
                         share = 0;
 
@@ -98,24 +107,29 @@ public class BackTestService {
                         trade.setRate(rate);
                         //交易统计
                         //在出售的时候记录这些信息。
-                        if (trade.getSellClosePoint() - trade.getBuyClosePoint() > 0) {
+                        if (trade.getSellClosePoint() - trade.getBuyClosePoint() > 0)
+                        {
                             totalWinRate += (trade.getSellClosePoint() - trade.getBuyClosePoint()) / trade.getBuyClosePoint();
                             winCount++;
-                        } else {
+                        } else
+                        {
                             totalLossRate += (trade.getSellClosePoint() - trade.getBuyClosePoint()) / trade.getBuyClosePoint();
                             lossCount++;
                         }
                     }
                 }
                 //do nothing
-                else {
+                else
+                {
 
                 }
             }
 
-            if (share != 0) {
+            if (share != 0)
+            {
                 value = closePoint * share;
-            } else {
+            } else
+            {
                 value = cash;
             }
             float rate = value / initCash;
@@ -148,7 +162,8 @@ public class BackTestService {
         return map;
     }
 
-    private static float getMax(int i, int day, List<IndexData> list) {
+    private static float getMax(int i, int day, List<IndexData> list)
+    {
         int start = i - 1 - day;
         if (start < 0)
             start = 0;
@@ -158,16 +173,19 @@ public class BackTestService {
             return 0;
 
         float max = 0;
-        for (int j = start; j < now; j++) {
+        for (int j = start; j < now; j++)
+        {
             IndexData bean = list.get(j);
-            if (bean.getClosePoint() > max) {
+            if (bean.getClosePoint() > max)
+            {
                 max = bean.getClosePoint();
             }
         }
         return max;
     }
 
-    private static float getMA(int i, int ma, List<IndexData> list) {
+    private static float getMA(int i, int ma, List<IndexData> list)
+    {
         int start = i - 1 - ma;
         int now = i - 1;
 
@@ -176,7 +194,8 @@ public class BackTestService {
 
         float sum = 0;
         float avg = 0;
-        for (int j = start; j < now; j++) {
+        for (int j = start; j < now; j++)
+        {
             IndexData bean = list.get(j);
             sum += bean.getClosePoint();
         }
@@ -185,7 +204,8 @@ public class BackTestService {
     }
 
     //用于计算当前的时间范围是多少年。
-    public float getYear(List<IndexData> allIndexDatas) {
+    public float getYear(List<IndexData> allIndexDatas)
+    {
         float years;
         String sDateStart = allIndexDatas.get(0).getDate();
         String sDateEnd = allIndexDatas.get(allIndexDatas.size() - 1).getDate();
@@ -198,20 +218,24 @@ public class BackTestService {
     }
 
     //增加一个 getYear 方法， 获取某个日期如 2019-05-21 里的年份2019：
-    private int getYear(String date) {
+    private int getYear(String date)
+    {
         String strYear = StrUtil.subBefore(date, "-", false);
         return Convert.toInt(strYear);
     }
 
     //计算某一年的的指数收益
-    private float getIndexIncome(int year, List<IndexData> indexDatas) {
+    private float getIndexIncome(int year, List<IndexData> indexDatas)
+    {
         IndexData first = null;
         IndexData last = null;
-        for (IndexData indexData : indexDatas) {
+        for (IndexData indexData : indexDatas)
+        {
             String strDate = indexData.getDate();
             //Date date = DateUtil.parse(strDate);
             int currentYear = getYear(strDate);
-            if (currentYear == year) {
+            if (currentYear == year)
+            {
                 if (null == first)
                     first = indexData;
                 last = indexData;
@@ -221,13 +245,16 @@ public class BackTestService {
     }
 
     //计算某一年的趋势投资收益
-    private float getTrendIncome(int year, List<Profit> profits) {
+    private float getTrendIncome(int year, List<Profit> profits)
+    {
         Profit first = null;
         Profit last = null;
-        for (Profit profit : profits) {
+        for (Profit profit : profits)
+        {
             String strDate = profit.getDate();
             int currentYear = getYear(strDate);
-            if (currentYear == year) {
+            if (currentYear == year)
+            {
                 if (null == first)
                     first = profit;
                 last = profit;
@@ -239,7 +266,8 @@ public class BackTestService {
     }
 
     //计算完整时间范围内，每一年的指数投资收益和趋势投资收益
-    private List<AnnualProfit> caculateAnnualProfits(List<IndexData> indexDatas, List<Profit> profits) {
+    private List<AnnualProfit> caculateAnnualProfits(List<IndexData> indexDatas, List<Profit> profits)
+    {
         List<AnnualProfit> result = new ArrayList<>();
         String strStartDate = indexDatas.get(0).getDate();
         String strEndDate = indexDatas.get(indexDatas.size() - 1).getDate();
@@ -247,7 +275,8 @@ public class BackTestService {
         Date endDate = DateUtil.parse(strEndDate);
         int startYear = DateUtil.year(startDate);
         int endYear = DateUtil.year(endDate);
-        for (int year = startYear; year <= endYear; year++) {
+        for (int year = startYear; year <= endYear; year++)
+        {
             AnnualProfit annualProfit = new AnnualProfit();
             annualProfit.setYear(year);
             float indexIncome = getIndexIncome(year, indexDatas);

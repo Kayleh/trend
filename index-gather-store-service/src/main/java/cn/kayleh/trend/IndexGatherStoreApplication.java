@@ -20,8 +20,10 @@ import org.springframework.web.client.RestTemplate;
 @EnableEurekaClient
 @EnableHystrix//开启断路器
 @EnableCaching//启动缓存
-public class IndexGatherStoreApplication {
-    public static void main(String[] args) {
+public class IndexGatherStoreApplication
+{
+    public static void main(String[] args)
+    {
 
 
         int defaultPort = 8001;
@@ -30,28 +32,35 @@ public class IndexGatherStoreApplication {
         int eurekaServerPort = 8761;
 
 
-        if (NetUtil.isUsableLocalPort(eurekaServerPort)) {
+        if (NetUtil.isUsableLocalPort(eurekaServerPort))
+        {
             System.err.printf("检查到端口%d 未启用，判断 eureka 服务器没有启动，本服务无法使用，故退出%n", eurekaServerPort);
             System.exit(1);
         }
 
         //增加 redisPort， 用于判断 redis 服务器是否启动
-        if (NetUtil.isUsableLocalPort(redisPort)) {
+        if (NetUtil.isUsableLocalPort(redisPort))
+        {
             System.err.printf("检查到端口%d 未启用，判断 redis 服务器没有启动，本服务无法使用，故退出%n", redisPort);
             System.exit(1);
         }
-        if (null != args && 0 != args.length) {
-            for (String arg : args) {
-                if (arg.startsWith("port=")) {
+        if (null != args && 0 != args.length)
+        {
+            for (String arg : args)
+            {
+                if (arg.startsWith("port="))
+                {
                     String strPort = StrUtil.subAfter(arg, "port=", true);
-                    if (NumberUtil.isNumber(strPort)) {
+                    if (NumberUtil.isNumber(strPort))
+                    {
                         port = Convert.toInt(strPort);
                     }
                 }
             }
         }
 
-        if (!NetUtil.isUsableLocalPort(port)) {
+        if (!NetUtil.isUsableLocalPort(port))
+        {
             System.err.printf("端口%d被占用了，无法启动%n", port);
             System.exit(1);
         }
@@ -60,7 +69,8 @@ public class IndexGatherStoreApplication {
     }
 
     @Bean
-    RestTemplate restTemplate() {
+    RestTemplate restTemplate()
+    {
         return new RestTemplate();
     }
 }

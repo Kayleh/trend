@@ -14,9 +14,11 @@ import java.util.List;
  */
 @Service
 @CacheConfig(cacheNames = "index_datas")
-public class IndexDataService {
+public class IndexDataService
+{
     @Cacheable(key = "'indexData-code-'+ #p0")
-    public List<IndexData> get(String code) {
+    public List<IndexData> get(String code)
+    {
         return CollUtil.toList();
     }
 }

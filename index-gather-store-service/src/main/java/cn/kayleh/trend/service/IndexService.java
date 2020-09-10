@@ -22,7 +22,8 @@ import java.util.Map;
  */
 @Service //增加 @CacheConfig(cacheNames="indexes") 表示缓存的名称是 indexes. 如图所示，保存到 redis 就会以 indexes 命名
 @CacheConfig(cacheNames = "indexes")
-public class IndexService {
+public class IndexService
+{
     private List<Index> indexes;
 
     @Autowired
@@ -36,7 +37,8 @@ public class IndexService {
 //        return map2Index(temp);
 //    }
     @HystrixCommand(fallbackMethod = "third_part_not_connected")
-    public List<Index> fresh() {
+    public List<Index> fresh()
+    {
         indexes = fetch_indexes_from_third_part();
         IndexService indexService = SpringContextUtil.getBean(IndexService.class);
         indexService.remove();
@@ -44,30 +46,36 @@ public class IndexService {
     }
 
     @CacheEvict(allEntries = true)
-    public void remove() {
+    public void remove()
+    {
     }
 
     @Cacheable(key = "'all_codes'")
-    public List<Index> store() {
+    public List<Index> store()
+    {
         System.out.println(this);
         return indexes;
     }
 
     @Cacheable(key = "'all_codes'")
-    public List<Index> get() {
+    public List<Index> get()
+    {
         return CollUtil.toList();
     }
 
 
-    public List<Index> fetch_indexes_from_third_part() {
+    public List<Index> fetch_indexes_from_third_part()
+    {
         List<Map> temp = restTemplate.getForObject("http://127.0.0.1:8090/indexes/codes.json", List.class);
         return map2Index(temp);
     }
 
     //获取出来的内容是Map类型，所以需要个 map2Index把 Map 转换为 Index。
-    private List<Index> map2Index(List<Map> temp) {
+    private List<Index> map2Index(List<Map> temp)
+    {
         List<Index> indexes = new ArrayList<>();
-        for (Map map : temp) {
+        for (Map map : temp)
+        {
             String code = map.get("code").toString();
             String name = map.get("name").toString();
             Index index = new Index();
@@ -79,7 +87,8 @@ public class IndexService {
         return indexes;
     }
 
-    public List<Index> third_part_not_connected() {
+    public List<Index> third_part_not_connected()
+    {
         System.out.println("third_part_not_connected()");
         Index index = new Index();
         index.setCode("000000");

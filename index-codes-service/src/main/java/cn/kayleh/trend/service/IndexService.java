@@ -14,11 +14,13 @@ import java.util.List;
  */
 @Service
 @CacheConfig(cacheNames = "indexes")
-public class IndexService {
+public class IndexService
+{
     private List<Index> indexes;
 
     @Cacheable(key = "'all_codes'")
-    public List<Index> get() {
+    public List<Index> get()
+    {
         Index index = new Index();
         index.setName("无效指数代码");
         index.setCode("000000");

@@ -19,16 +19,19 @@ import java.time.Duration;
 
 @Configuration
 @ConfigurationProperties(prefix = "spring.cache.redis")
-public class RedisCacheConfig {
+public class RedisCacheConfig
+{
 
     private Duration timeToLive = Duration.ZERO;
 
-    public void setTimeToLive(Duration timeToLive) {
+    public void setTimeToLive(Duration timeToLive)
+    {
         this.timeToLive = timeToLive;
     }
 
     @Bean
-    public CacheManager cacheManager(RedisConnectionFactory factory) {
+    public CacheManager cacheManager(RedisConnectionFactory factory)
+    {
         RedisSerializer<String> redisSerializer = new StringRedisSerializer();
 
         Jackson2JsonRedisSerializer jackson2JsonRedisSerializer = new Jackson2JsonRedisSerializer(Object.class);

@@ -1,7 +1,8 @@
 package cn.kayleh.trend.pojo;
 
 //交易类用于记录交易的购买日期，出售日期，购买盘点，出售盘点，收益。
-public class Trade {
+public class Trade
+{
 
     private String buyDate;
     private String sellDate;
@@ -9,43 +10,53 @@ public class Trade {
     private float sellClosePoint;
     private float rate;//收益
 
-    public String getBuyDate() {
+    public String getBuyDate()
+    {
         return buyDate;
     }
 
-    public void setBuyDate(String buyDate) {
+    public void setBuyDate(String buyDate)
+    {
         this.buyDate = buyDate;
     }
 
-    public String getSellDate() {
+    public String getSellDate()
+    {
         return sellDate;
     }
 
-    public void setSellDate(String sellDate) {
+    public void setSellDate(String sellDate)
+    {
         this.sellDate = sellDate;
     }
 
-    public float getBuyClosePoint() {
+    public float getBuyClosePoint()
+    {
         return buyClosePoint;
     }
 
-    public void setBuyClosePoint(float buyClosePoint) {
+    public void setBuyClosePoint(float buyClosePoint)
+    {
         this.buyClosePoint = buyClosePoint;
     }
 
-    public float getSellClosePoint() {
+    public float getSellClosePoint()
+    {
         return sellClosePoint;
     }
 
-    public void setSellClosePoint(float sellClosePoint) {
+    public void setSellClosePoint(float sellClosePoint)
+    {
         this.sellClosePoint = sellClosePoint;
     }
 
-    public float getRate() {
+    public float getRate()
+    {
         return rate;
     }
 
-    public void setRate(float rate) {
+    public void setRate(float rate)
+    {
         this.rate = rate;
     }
 

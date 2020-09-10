@@ -20,7 +20,8 @@ import java.util.*;
  * @Date: 2020/9/2 20:26
  */
 @RestController
-public class BackTestController {
+public class BackTestController
+{
     @Autowired
     BackTestService backTestService;
 
@@ -44,7 +45,8 @@ public class BackTestController {
             , @PathVariable("serviceCharge") float serviceCharge //手续费
             , @PathVariable("startDate") String strStartDate
             , @PathVariable("endDate") String strEndDate
-    ) throws Exception {
+    ) throws Exception
+    {
         List<IndexData> allIndexDatas = backTestService.listIndexData(code);
 
         //计算出开始日期和结束日期并返回
@@ -106,7 +108,8 @@ public class BackTestController {
         return result;
     }
 
-    private List<IndexData> filterByDateRange(List<IndexData> allIndexDatas, String strStartDate, String strEndDate) {
+    private List<IndexData> filterByDateRange(List<IndexData> allIndexDatas, String strStartDate, String strEndDate)
+    {
         if (StrUtil.isBlankOrUndefined(strStartDate) || StrUtil.isBlankOrUndefined(strEndDate))
             return allIndexDatas;
 
@@ -114,12 +117,14 @@ public class BackTestController {
         Date startDate = DateUtil.parse(strStartDate);
         Date endDate = DateUtil.parse(strEndDate);
 
-        for (IndexData indexData : allIndexDatas) {
+        for (IndexData indexData : allIndexDatas)
+        {
 
             Date date = DateUtil.parse(indexData.getDate());
             if (
                     date.getTime() >= startDate.getTime() && date.getTime() <= endDate.getTime()
-            ) {
+            )
+            {
                 result.add(indexData);
             }
         }

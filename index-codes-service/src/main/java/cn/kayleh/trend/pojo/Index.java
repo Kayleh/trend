@@ -7,23 +7,28 @@ package cn.kayleh.trend.pojo;
 
 import java.io.Serializable;
 
-public class Index implements Serializable {
+public class Index implements Serializable
+{
     String code;
     String name;
 
-    public String getCode() {
+    public String getCode()
+    {
         return code;
     }
 
-    public void setCode(String code) {
+    public void setCode(String code)
+    {
         this.code = code;
     }
 
-    public String getName() {
+    public String getName()
+    {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name)
+    {
         this.name = name;
     }
 

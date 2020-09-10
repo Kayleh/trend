@@ -11,18 +11,21 @@ import org.springframework.context.annotation.Configuration;
  */
 //定时器配置，每隔一分钟执行一次
 @Configuration
-public class QuartzConfiguration {
+public class QuartzConfiguration
+{
 
     private static final int interval = 1;
 
     @Bean
-    public JobDetail weatherDataSyncJobDetail() {
+    public JobDetail weatherDataSyncJobDetail()
+    {
         return JobBuilder.newJob(IndexDataSyncJob.class).withIdentity("indexDataSyncJob")
                 .storeDurably().build();
     }
 
     @Bean
-    public Trigger weatherDataSyncTrigger() {
+    public Trigger weatherDataSyncTrigger()
+    {
         SimpleScheduleBuilder schedBuilder = SimpleScheduleBuilder.simpleSchedule()
                 .withIntervalInMinutes(interval).repeatForever();
 

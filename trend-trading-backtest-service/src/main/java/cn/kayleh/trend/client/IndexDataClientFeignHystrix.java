@@ -14,9 +14,11 @@ import java.util.List;
  * @Date: 2020/9/2 20:12
  */
 @Component
-public class IndexDataClientFeignHystrix implements IndexDataClient {
+public class IndexDataClientFeignHystrix implements IndexDataClient
+{
     @Override
-    public List<IndexData> getIndexData(String code) {
+    public List<IndexData> getIndexData(String code)
+    {
         IndexData indexData = new IndexData();
         indexData.setClosePoint(0);
         indexData.setDate("0000-00-00");

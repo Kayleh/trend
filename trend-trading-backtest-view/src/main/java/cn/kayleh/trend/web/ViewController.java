@@ -12,12 +12,14 @@ import org.springframework.web.bind.annotation.GetMapping;
  */
 @Controller
 @RefreshScope//表示允许刷新
-public class ViewController {
+public class ViewController
+{
     @Value("${version}")
     String version;
 
     @GetMapping("/")
-    public String view(Model model) throws Exception {
+    public String view(Model model) throws Exception
+    {
         model.addAttribute("version", version);
         return "view";
     }

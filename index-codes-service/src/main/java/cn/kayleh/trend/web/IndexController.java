@@ -15,7 +15,8 @@ import java.util.List;
  * @Date: 2020/9/1 13:22
  */
 @RestController
-public class IndexController {
+public class IndexController
+{
     @Autowired
     IndexService indexService;
     @Autowired
@@ -25,7 +26,8 @@ public class IndexController {
 
     @GetMapping("/codes")
     @CrossOrigin
-    public List<Index> codes() throws Exception {
+    public List<Index> codes() throws Exception
+    {
         System.out.println("current instance's port is " + ipConfiguration.getPort());
         return indexService.get();
     }

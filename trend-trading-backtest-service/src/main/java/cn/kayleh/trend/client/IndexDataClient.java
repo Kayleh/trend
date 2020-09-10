@@ -14,7 +14,8 @@ import java.util.List;
  */
 @Component
 @FeignClient(value = "INDEX-DATA-SERVICE", fallback = IndexDataClientFeignHystrix.class)
-public interface IndexDataClient {
+public interface IndexDataClient
+{
     @GetMapping("/data/{code}")
     public List<IndexData> getIndexData(@PathVariable("code") String code);
 }

@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a976130-c1e8-4914-9384-679eedfe54db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-hystrix-dashboard/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-hystrix-dashboard/src/main/java/cn/kayleh/trend/IndexHystrixDashboardApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-hystrix-dashboard/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-hystrix-dashboard/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-hystrix-dashboard/target/classes/cn/kayleh/trend/IndexHystrixDashboardApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-turbine/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-turbine/src/main/java/cn/kayleh/trend/IndexTurbineApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-turbine/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-turbine/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-turbine/target/classes/cn/kayleh/trend/IndexTurbineApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java/cn/kayleh/trend/util/AccessService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-service/target/classes/cn/kayleh/trend/util/AccessService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trend-trading-backtest-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java/cn/kayleh/trend/TrendTradingBackTestServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java/cn/kayleh/trend/TrendTradingBackTestServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trend-trading-backtest-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trend-trading-backtest-service/target/classes/cn/kayleh/trend/TrendTradingBackTestServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-service/target/classes/cn/kayleh/trend/TrendTradingBackTestServiceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,11 +151,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.IndexGatherStoreApplication" />
       <item itemvalue="Application.FreshConfigUtil" />
+      <item itemvalue="Application.AccessService" />
+      <item itemvalue="Spring Boot.IndexGatherStoreApplication" />
       <item itemvalue="Spring Boot.TrendTradingBackTestServiceApplication" />
       <item itemvalue="Spring Boot.IndexHystrixDashboardApplication" />
-      <item itemvalue="Application.AccessService" />
       <item itemvalue="Spring Boot.IndexTurbineApplication" />
     </list>
     <recent_temporary>
@@ -215,7 +195,8 @@
       <workItem from="1599396578634" duration="7324000" />
       <workItem from="1599411399946" duration="387000" />
       <workItem from="1599447474510" duration="5375000" />
-      <workItem from="1599482487021" duration="11107000" />
+      <workItem from="1599482487021" duration="11752000" />
+      <workItem from="1599560868026" duration="4000" />
     </task>
     <servers />
   </component>
@@ -251,38 +232,38 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="718" y="414" key="Github.CreateGistDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1599142893563" />
-    <state width="1289" height="510" key="GridCell.Tab.0.bottom" timestamp="1599495493919">
+    <state width="1289" height="510" key="GridCell.Tab.0.bottom" timestamp="1599496193427">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1289" height="510" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1599495493919" />
-    <state width="1289" height="510" key="GridCell.Tab.0.center" timestamp="1599495493919">
+    <state width="1289" height="510" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1599496193427" />
+    <state width="1289" height="510" key="GridCell.Tab.0.center" timestamp="1599496193427">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1289" height="510" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1599495493919" />
-    <state width="1289" height="510" key="GridCell.Tab.0.left" timestamp="1599495493919">
+    <state width="1289" height="510" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1599496193427" />
+    <state width="1289" height="510" key="GridCell.Tab.0.left" timestamp="1599496193427">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1289" height="510" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1599495493919" />
-    <state width="1289" height="510" key="GridCell.Tab.0.right" timestamp="1599495493919">
+    <state width="1289" height="510" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1599496193427" />
+    <state width="1289" height="510" key="GridCell.Tab.0.right" timestamp="1599496193427">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1289" height="510" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599495493919" />
-    <state width="1289" height="510" key="GridCell.Tab.1.bottom" timestamp="1599495493920">
+    <state width="1289" height="510" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599496193427" />
+    <state width="1289" height="510" key="GridCell.Tab.1.bottom" timestamp="1599496193427">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1289" height="510" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1599495493920" />
-    <state width="1289" height="510" key="GridCell.Tab.1.center" timestamp="1599495493920">
+    <state width="1289" height="510" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1599496193427" />
+    <state width="1289" height="510" key="GridCell.Tab.1.center" timestamp="1599496193427">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1289" height="510" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1599495493920" />
-    <state width="1289" height="510" key="GridCell.Tab.1.left" timestamp="1599495493919">
+    <state width="1289" height="510" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1599496193427" />
+    <state width="1289" height="510" key="GridCell.Tab.1.left" timestamp="1599496193427">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1289" height="510" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1599495493919" />
-    <state width="1289" height="510" key="GridCell.Tab.1.right" timestamp="1599495493920">
+    <state width="1289" height="510" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1599496193427" />
+    <state width="1289" height="510" key="GridCell.Tab.1.right" timestamp="1599496193427">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1289" height="510" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599495493920" />
+    <state width="1289" height="510" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599496193427" />
     <state width="1301" height="409" key="GridCell.Tab.2.bottom" timestamp="1599490167198">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

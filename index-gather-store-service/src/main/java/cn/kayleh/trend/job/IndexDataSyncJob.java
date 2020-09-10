@@ -16,7 +16,8 @@ import java.util.List;
  * @Date: 2020/9/1 12:48
  * 任务类，同时刷新指数代码和指数数据。
  */
-public class IndexDataSyncJob extends QuartzJobBean {
+public class IndexDataSyncJob extends QuartzJobBean
+{
 
     @Autowired
     private IndexService indexService;
@@ -25,10 +26,12 @@ public class IndexDataSyncJob extends QuartzJobBean {
     private IndexDataService indexDataService;
 
     @Override
-    protected void executeInternal(JobExecutionContext context) throws JobExecutionException {
+    protected void executeInternal(JobExecutionContext context) throws JobExecutionException
+    {
         System.out.println("定时启动：" + DateUtil.now());
         List<Index> indexes = indexService.fresh();
-        for (Index index : indexes) {
+        for (Index index : indexes)
+        {
             indexDataService.fresh(index.getCode());
         }
         System.out.println("定时结束：" + DateUtil.now());

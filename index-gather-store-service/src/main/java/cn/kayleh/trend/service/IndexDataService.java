@@ -25,14 +25,16 @@ import java.util.Map;
  */
 @Service
 @CacheConfig(cacheNames = "index_datas")
-public class IndexDataService {
+public class IndexDataService
+{
     private Map<String, List<IndexData>> indexDatas = new HashMap<>();
 
     @Autowired
     RestTemplate restTemplate;
 
     @HystrixCommand(fallbackMethod = "third_part_not_connected")
-    public List<IndexData> fresh(String code) {
+    public List<IndexData> fresh(String code)
+    {
         List<IndexData> indexeDatas = fetch_indexes_from_third_part(code);
 
         indexDatas.put(code, indexeDatas);
@@ -46,27 +48,33 @@ public class IndexDataService {
     }
 
     @CacheEvict(key = "'indexData-code-'+ #p0")
-    public void remove(String code) {
+    public void remove(String code)
+    {
     }
 
     @CachePut(key = "'indexData-code-'+ #p0")
-    public List<IndexData> store(String code) {
+    public List<IndexData> store(String code)
+    {
         return indexDatas.get(code);
     }
 
     @Cacheable(key = "'indexData-code-'+ #p0")
-    public List<IndexData> get(String code) {
+    public List<IndexData> get(String code)
+    {
         return CollUtil.toList();
     }
 
-    public List<IndexData> fetch_indexes_from_third_part(String code) {
+    public List<IndexData> fetch_indexes_from_third_part(String code)
+    {
         List<Map> temp = restTemplate.getForObject("http://127.0.0.1:8090/indexes/" + code + ".json", List.class);
         return map2IndexData(temp);
     }
 
-    private List<IndexData> map2IndexData(List<Map> temp) {
+    private List<IndexData> map2IndexData(List<Map> temp)
+    {
         List<IndexData> indexDatas = new ArrayList<>();
-        for (Map map : temp) {
+        for (Map map : temp)
+        {
             String date = map.get("date").toString();
             float closePoint = Convert.toFloat(map.get("closePoint"));
             IndexData indexData = new IndexData();
@@ -78,7 +86,8 @@ public class IndexDataService {
         return indexDatas;
     }
 
-    public List<IndexData> third_part_not_connected(String code) {
+    public List<IndexData> third_part_not_connected(String code)
+    {
         System.out.println("third_part_not_connected()");
         IndexData index = new IndexData();
         index.setClosePoint(0);

@@ -15,7 +15,8 @@ import java.util.List;
  * @Date: 2020/9/1 19:18
  */
 @RestController
-public class IndexDataController {
+public class IndexDataController
+{
     @Autowired
     IndexDataService indexDataService;
     @Autowired
@@ -23,7 +24,8 @@ public class IndexDataController {
 
     //  http://127.0.0.1:8021/data/000300
     @GetMapping("/data/{code}")
-    public List<IndexData> get(@PathVariable("code") String code) throws Exception {
+    public List<IndexData> get(@PathVariable("code") String code) throws Exception
+    {
         System.out.println("current instance is :" + ipConfiguration.getPort());
         return indexDataService.get(code);
     }

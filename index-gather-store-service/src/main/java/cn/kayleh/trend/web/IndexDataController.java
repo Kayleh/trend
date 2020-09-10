@@ -14,7 +14,8 @@ import java.util.List;
  * @Date: 2020/8/31 23:18
  */
 @RestController
-public class IndexDataController {
+public class IndexDataController
+{
     @Autowired
     IndexDataService indexDataService;
 
@@ -23,18 +24,21 @@ public class IndexDataController {
 //  http://127.0.0.1:8001/removeIndexData/000300
 
     @GetMapping("/freshIndexData/{code}")
-    public String fresh(@PathVariable("code") String code) throws Exception {
+    public String fresh(@PathVariable("code") String code) throws Exception
+    {
         indexDataService.fresh(code);
         return "fresh index data successfully";
     }
 
     @GetMapping("/getIndexData/{code}")
-    public List<IndexData> get(@PathVariable("code") String code) throws Exception {
+    public List<IndexData> get(@PathVariable("code") String code) throws Exception
+    {
         return indexDataService.get(code);
     }
 
     @GetMapping("/removeIndexData/{code}")
-    public String remove(@PathVariable("code") String code) throws Exception {
+    public String remove(@PathVariable("code") String code) throws Exception
+    {
         indexDataService.remove(code);
         return "remove index data successfully";
     }

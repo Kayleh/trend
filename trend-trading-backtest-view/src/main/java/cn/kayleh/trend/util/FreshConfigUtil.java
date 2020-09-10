@@ -8,8 +8,10 @@ import java.util.HashMap;
  * @Author: Kayleh
  * @Date: 2020/9/7 22:31
  */
-public class FreshConfigUtil {
-    public static void main(String[] args) {
+public class FreshConfigUtil
+{
+    public static void main(String[] args)
+    {
         HashMap<String, String> headers = new HashMap<>();
         headers.put("Content-Type", "application/json; charset=utf-8");
         System.out.println("因为要去git获取，还要刷新index-config-server, 会比较卡，所以一般会要好几秒才能完成，请耐心等待");

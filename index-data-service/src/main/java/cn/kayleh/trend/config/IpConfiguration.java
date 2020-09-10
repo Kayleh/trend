@@ -9,16 +9,19 @@ import org.springframework.stereotype.Component;
  * @Date: 2020/9/1 19:08
  */
 @Component
-public class IpConfiguration implements ApplicationListener<WebServerInitializedEvent> {
+public class IpConfiguration implements ApplicationListener<WebServerInitializedEvent>
+{
 
     private int serverPort;
 
     @Override
-    public void onApplicationEvent(WebServerInitializedEvent event) {
+    public void onApplicationEvent(WebServerInitializedEvent event)
+    {
         this.serverPort = event.getWebServer().getPort();
     }
 
-    public int getPort() {
+    public int getPort()
+    {
         return this.serverPort;
     }
 }
